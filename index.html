@@ -8,12 +8,16 @@
     <meta property="og:image" content="">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <style type="text/css">
+        body {
+            margin:0;
+            padding:0
+        }
         a {
             font-family: tahoma;
             color: blue;
         }
         .mainImage {
-            max-width: 100%;
+            max-width: 66%;
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -21,22 +25,60 @@
         }
         .center {
             text-align: center;
-            padding-top: 50px;
+            padding-top: 30px;
             padding-bottom: 30px;
+        }
+        button {
+            padding: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: white;
+        }
+        button:hover {
+            background-color: #f1f1f1;
+        }
+        .mainButton {
+            background-color: #1F18C0;
+            color: white;
+            border: 2px solid yellow;
+        }
+        .mainButton:hover {
+            background-color: blue;
+        }
+        .language-button {
+            position: absolute;
+            right: 15px;
+            top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .mainImage {
+                max-width: 100%
+            }
+        }
+        @media (max-width: 400px) {
+            .language-button {
+                right:3px;
+                top:3px;
+            }
         }
     </style>
 </head>
 <body>
-    <div style="position:absolute;right:5px;top:55px;">
+    <div class="language-button">
         <a href="/english/"><button>English</button></a>
     </div>
     <div class="center">
-        <a href="https://forms.google.com" target="_blank"><button>Reserva Aquí</button></a>
+        <a href="https://forms.google.com" target="_blank">
+            <button class="mainButton">Reserva Aquí</button>
+        </a>
     </div>
-    <img src="babyrentals.mx_es_page_1_v_1.png" class="mainImage" />
-    <img src="babyrentals.mx_es_page_2_v_1.png" class="mainImage" />
+    <img src="homepage_spanish_page1_v1.png" class="mainImage" />
+    <img src="homepage_spanish_page2_v1.png" class="mainImage" />
     <div class="center">
-        <a href="https://forms.google.com" target="_blank"><button>Reserva Aquí</button></a>
+        <a href="https://forms.google.com" target="_blank">
+            <button class="mainButton">Reserva Aquí</button>
+        </a>
     </div>
 </body>
 </html>
