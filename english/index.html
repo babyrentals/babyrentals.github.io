@@ -8,12 +8,15 @@
     <meta property="og:image" content="">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
         a {
-            font-family: tahoma;
             color: blue;
         }
         .mainImage {
-            max-width: 100%;
+            max-width: 66%;
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -21,16 +24,65 @@
         }
         .center {
             text-align: center;
-            padding-top: 50px;
-            padding-bottom: 30px;
+            padding-top: 30px;
+            padding-bottom: 15px;
+        }
+        button {
+            padding: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #fafafa;
+            border: 1px solid grey;
+            color: black;
+            font-family: Verdana;
+            font-weight: 500;
+        }
+        button:hover {
+            background-color: #f0f0f0;
+        }
+        .mainButton {
+            background-color: #4c9da9;
+            color: white;
+            border: 3px solid black;
+        }
+        .mainButton:hover {
+            background-color: #9e70ba;
+        }
+        .language-button {
+            position: absolute;
+            right: 15px;
+            top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .mainImage {
+                max-width: 100%
+            }
+        }
+        @media (max-width: 300px) {
+            .language-button {
+                right:3px;
+                top:3px;
+            }
         }
     </style>
 </head>
 <body>
-
-    <div class="center">
-        Coming very soon
+    <div class="language-button">
+        <a href="/"><button>Español</button></a>
     </div>
-
+    <div class="center">
+        <a href="/english/book-now">
+            <button class="mainButton">Book Here</button>
+        </a>
+    </div>
+    <img src="homepage_english_page1_v2.png" class="mainImage" />
+    <img src="homepage_english_page2_v2.png" class="mainImage" />
+    <img src="homepage_english_page3_v2.png" class="mainImage" />
+    <div class="center" style="margin-bottom:30px;">
+        <a href="/english/book-now">
+            <button class="mainButton">Book Here</button>
+        </a>
+    </div>
 </body>
 </html>
