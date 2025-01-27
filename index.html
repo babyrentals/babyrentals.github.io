@@ -146,6 +146,17 @@
     <a href="https://www.instagram.com/babyrentalsmx/" target="_blank">
         <img src="instagram_spanish.jpg" class="mainImage" />
     </a> -->
+
+    <div>Mexico <span id="year"></span></div>
+
+<script>
+window.onload = function() {
+ var year = String(new Date().getFullYear());
+ document.getElementsByTagName('span')[0].innerHTML = year;
+}
+</script>
+
+    
     <div style="margin-bottom:50px;"></div>
     <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFSX3L2MTH"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-NFSX3L2MTH'); </script>
 </body>
