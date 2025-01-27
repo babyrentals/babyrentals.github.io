@@ -21,7 +21,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 10px;
+/*             margin-top: 10px; */
         }
         .center {
             text-align: center;
@@ -60,16 +60,59 @@
                 max-width: 100%
             }
         }
-        @media (max-width: 300px) {
-            .language-button {
-                right:3px;
-                top:3px;
-            }
-        }
+    
     </style>
 </head>
 <body>
-    <div class="language-button">
+
+
+     <div style="position: relative;">
+    <a href="/reserva-ahora">
+        <img src="1_en.jpg" class="mainImage" style="z-index: 1;" />
+    </a>
+    <div style="position: absolute; top: 10px; z-index: 2;" class="language-button">
+        <a href="/"><button>Español</button></a>
+    </div>
+</div>
+
+<style>
+.language-button {
+    right: calc(17% + 10px);
+}
+
+@media (max-width: 600px) {
+    .language-button {
+        right: 10px;
+    }
+}
+
+@media (max-width: 300px) {
+    .language-button {
+        right: 3px;
+        top: 3px;
+    }
+}
+</style>
+
+    <a href="/reserva-ahora">
+    <img src="2_en.jpg" class="mainImage" />
+</a>
+<a href="/reserva-ahora">
+    <img src="3_en.jpg" class="mainImage" />
+</a>
+ 
+    <img src="4_en.jpg" class="mainImage" />
+
+    <a target="_blank" href="https://wa.me/529541484953">
+    <img src="5_en.jpg" class="mainImage" />
+</a>
+    
+    <img src="6_en.jpg" class="mainImage" />
+
+    <a target="_blank" href="https://www.instagram.com/babyrentalsmx/">
+    <img src="7.jpg" class="mainImage" />
+</a>
+<!--     <div class="language-button">
         <a href="/"><button>Español</button></a>
     </div>
     <div class="center">
@@ -93,7 +136,16 @@
     </div>
     <a href="https://www.instagram.com/babyrentalsmx/" target="_blank">
         <img src="instagram_english.jpg" class="mainImage" />
-    </a>
+    </a> -->
+
+    <div style="text-align:center;font-size:17px;font-family:Arial;">México <span id="year"></span></div>
+
+<script>
+window.onload = function() {
+ var year = String(new Date().getFullYear());
+ document.getElementsByTagName('span')[0].innerHTML = year;
+}
+</script>
     <div style="margin-bottom:50px;"></div>
     <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFSX3L2MTH"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-NFSX3L2MTH'); </script>
 </body>
